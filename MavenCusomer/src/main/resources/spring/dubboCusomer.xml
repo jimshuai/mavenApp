@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:tx="http://code.alibabatech.com/schema/dubbo" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+<!--1、制定当前服务的名称，（同样的服务名字项目，不要和其他的服务同名）-->
+	<dubbo:application name="mavenCusomer-dubbo"></dubbo:application>
+     <!-- 这里使用的注册中心是zookeeper -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" client="zkclient"/>
+ 
+    <dubbo:reference id="userservice" interface="com.jim.service.IUserService"/>
+
+ 
+</beans>
+
