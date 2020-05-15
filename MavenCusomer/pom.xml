@@ -17,7 +17,7 @@
 	  <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
 	  <log4j.version>2.10.0</log4j.version>
 	  <!--json解析器-->
-	  <jackson.version>2.9.4</jackson.version>
+	  <jackson.version>2.11.0</jackson.version>
 	  <!--servlet-->
    	  <javax.servlet.version>4.0.0</javax.servlet.version>
       <jstl.version>1.2</jstl.version>
